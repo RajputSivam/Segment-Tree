@@ -46,7 +46,7 @@ public class DynamicRangeSumQueries {
     // idx, l, r: same as build function - they define the current node.
     // ql, qr: the query range we are interested in.
     private static long querysegTree(int idx, int l, int r, int start, int end) {
-        // Case 1: No overlap -> return 0 (identity for sum)
+        // Case 1: No overlap 
         if (l > end || r < start)
             return 0;
         // Case 2: Complete overlap -> return the node's value
